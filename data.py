@@ -15,4 +15,4 @@ categoriesd=categories.set_index('item_category_id').T.to_dict('list')
 item_category_names=[]
 for ri,rd in items.iterrows():
     item_category_names.append(categoriesd[rd['item_category_id']])
-items['item_category_names']=item_category_names
+items['item_category_names']=item_category_names 
